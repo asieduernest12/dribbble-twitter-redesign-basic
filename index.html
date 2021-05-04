@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vicotria | Tweet App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="d-flex">
+
+    <div class="twt--page my-lg-auto m-auto text-white p-lg-5 d-flex flex-column flex-lg-row">
+
+        <div class="twt--sidenav me-lg-4">
+            <ul class="nav--list text-muted d-flex flex-row flex-lg-column justify-content-around py-5">
+                <li class="nav--item"><a href="#"><i class="fab fa-twitter fa-2x"></i></a></li>
+                <li class="nav--item"><a href="#"><i class="fas fa-house-user fa-2x"></i></a></li>
+                <li class="nav--item"><a href="#"><i class="fas fa-hashtag fa-2x"></i></a></li>
+                <li class="nav--item"><a href="#"><i class="fas fa-bell fa-2x"></i></a></li>
+                <li class="nav--item"><a href="#"><i class="fas fa-bookmark fa-2x"></i></a></li>
+            </ul>
+        </div>
+    
+        <span class="d-inline-block section--horizontal-split border border-dark"></span>
+        
+        <div class="twt--timeline--section w-lg-80 d-flex mx-lg-auto  px-lg-5 px-4">
+
+            <div class="timeline--header position-relative py-4 ">
+                <h1>Anything on your mind ? </h1>
+                
+                
+                <div class="timeline--newfeed py-lg-5">
+                    <form onsubmit="submitFeed(event)">
+                        <div class="form-floating mb-2">
+                            <input type="text" required='true' class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email address</label>
+                        </div>
+                        <button type="sumibt" class="timeline--add-feed position-absolute btn btn-primary top-0 end-0 my-lg-4 my-3 fs-5 rounded-circle text-white d-flex">
+                            <span class="m-auto">+</span>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="timeline--feeds mt-lg-0 mt-5">
+                    <ul class="feed--list p-0">
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
